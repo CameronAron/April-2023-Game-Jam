@@ -6,7 +6,7 @@ public class pressRightButton : MonoBehaviour
 {
     [SerializeField] public bool moveRight { get; protected set; }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Finger"))
         {

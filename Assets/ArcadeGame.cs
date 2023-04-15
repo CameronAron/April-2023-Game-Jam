@@ -27,6 +27,7 @@ public class ArcadeGame : MonoBehaviour
     {
         if (startScript.GameStarted)
         {
+
             startScreen.SetActive(false);
 
             counter += Time.deltaTime;

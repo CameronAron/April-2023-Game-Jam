@@ -8,6 +8,8 @@ public class pressStartButton : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("collision");
+
         if (other.CompareTag("Finger"))
         {
             Debug.Log("Pressed the start button");

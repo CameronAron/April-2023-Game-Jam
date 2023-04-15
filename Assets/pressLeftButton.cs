@@ -6,7 +6,7 @@ public class pressLeftButton : MonoBehaviour
 {
     [SerializeField] public bool moveLeft { get; protected set; }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Finger"))
         {

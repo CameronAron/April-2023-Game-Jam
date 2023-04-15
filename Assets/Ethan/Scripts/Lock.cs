@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Lock : MonoBehaviour
 {
-    [SerializeField] Collider key;
-    [SerializeField] GameObject LockedItem;
+    [SerializeField] GameObject key;
+    [SerializeField] GameObject lockedItem;
 
     private void OnTriggerEnter(Collider other) {
-        if(other.GetComponent<Collider>() == key) {
-            LockedItem.SetActive(true);
+        if(other.GetComponent<Collider>() == key.GetComponent<Collider>()) {
+            lockedItem.SetActive(true);
+            key.SetActive(false);
         }
     }
 }

@@ -2755,6 +2755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cbd69628bd6d4459e3d55e154e87b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scaleValue: -0.17
 --- !u!1 &953396593
 GameObject:
   m_ObjectHideFlags: 0
@@ -4568,6 +4569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cbd69628bd6d4459e3d55e154e87b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scaleValue: -0.17
 --- !u!1001 &1096765696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6094,6 +6096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cbd69628bd6d4459e3d55e154e87b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scaleValue: -0.17
 --- !u!1 &1728550341
 GameObject:
   m_ObjectHideFlags: 0
@@ -8966,6 +8969,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.892
       objectReference: {fileID: 0}
+    - target: {fileID: 4243495135310456172, guid: 33e83ea514dab0e449b3044600f288cd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c84686a9f42e3cf49a3e155adf62385b, type: 2}
     - target: {fileID: 4243495135605433689, guid: 33e83ea514dab0e449b3044600f288cd,
         type: 3}
       propertyPath: startScript
@@ -8981,6 +8989,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4243495135898998417, guid: 33e83ea514dab0e449b3044600f288cd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9686dbb11fe6be9499abfcbafb2d3faa, type: 2}
+    - target: {fileID: 4243495135898998418, guid: 33e83ea514dab0e449b3044600f288cd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 4243495135898998431, guid: 33e83ea514dab0e449b3044600f288cd,
         type: 3}
       propertyPath: leftScript
@@ -8991,6 +9009,11 @@ PrefabInstance:
       propertyPath: rightScript
       value: 
       objectReference: {fileID: 237309569}
+    - target: {fileID: 4243495136366730153, guid: 33e83ea514dab0e449b3044600f288cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5193941295352080591, guid: 33e83ea514dab0e449b3044600f288cd,
         type: 3}
       propertyPath: m_RootOrder

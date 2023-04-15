@@ -4,20 +4,8 @@ using UnityEngine;
 
 public class HightScaler : MonoBehaviour
 {
-    [SerializeField]
-    private float defaultHeight = 1.8f;
-    [SerializeField]
-    private Camera camera;
-
-    private void Resize()
+    private void Update()
     {
-        float headHeight = camera.transform.localPosition.y;
-        float scale = defaultHeight / headHeight;
-        transform.localScale = Vector3.one * scale;
-    }
-
-    void OnEnable()
-    {
-        Resize();
+        this.transform.localPosition = new Vector3(0, -.79f, 0);
     }
 }

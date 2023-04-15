@@ -2755,8 +2755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cbd69628bd6d4459e3d55e154e87b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultHeight: 1
-  camera: {fileID: 870424113}
 --- !u!1 &953396593
 GameObject:
   m_ObjectHideFlags: 0
@@ -4570,8 +4568,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cbd69628bd6d4459e3d55e154e87b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultHeight: 1.8
-  camera: {fileID: 870424113}
 --- !u!1001 &1096765696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6056,6 +6052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1601770351}
+  - component: {fileID: 1601770352}
   m_Layer: 0
   m_Name: Camera Offset
   m_TagString: Untagged
@@ -6085,6 +6082,18 @@ Transform:
   m_Father: {fileID: 1087906754}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1601770352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601770350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4cbd69628bd6d4459e3d55e154e87b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1728550341
 GameObject:
   m_ObjectHideFlags: 0

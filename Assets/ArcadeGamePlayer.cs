@@ -44,12 +44,12 @@ public class ArcadeGamePlayer : MonoBehaviour
             WinScreen.SetActive(true);
         }
 
-        if(transform.localPosition.z < -.5f)
+        if(transform.localPosition.z < -1f)
         {
             transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, -.9f);
         }
 
-        if (transform.localPosition.z > .5f)
+        if (transform.localPosition.z > 1f)
         {
             transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, .9f);
         }

@@ -15,7 +15,7 @@ public class pressRightButton : MonoBehaviour
         }
     }
 
-    private void OnTriggerExir(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Finger"))
         {

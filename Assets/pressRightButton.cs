@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class pressRightButton : MonoBehaviour
 {
-    private void OnTriggerStay(Collider other)
+    [SerializeField] public bool moveRight { get; protected set; }
+
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Finger"))
         {
             Debug.Log("Pressed the right button");
+            moveRight = true;
+        }
+    }
+
+    private void OnTriggerExir(Collider other)
+    {
+        if (other.CompareTag("Finger"))
+        {
+            //Debug.Log("Pressed the left button");
+            moveRight = false;
         }
     }
 

@@ -7,6 +7,7 @@ TagManager:
   - Left Hand
   - Right Hand
   - Finger
+  - Fruit
   layers:
   - Default
   - TransparentFX

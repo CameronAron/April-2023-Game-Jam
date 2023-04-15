@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class pressStartButton : MonoBehaviour
 {
+    [SerializeField] public bool GameStarted { get; protected set; }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Finger"))
         {
             Debug.Log("Pressed the start button");
+            GameStarted = true;
         }
     }
 

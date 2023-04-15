@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Keypad : MonoBehaviour
+public class KeypadBreaker : MonoBehaviour
 {
     [SerializeField] TextMeshPro text;
     [SerializeField] TMP_InputField inputField;
     [SerializeField] string code = "8 7 6 4 ";
-    [SerializeField] GameObject obj;
+    [SerializeField] Light lit;
     private bool canType;
 
     private void Start() {
@@ -20,7 +20,7 @@ public class Keypad : MonoBehaviour
     private void Update() {
         if (inputField.text.Length == 8) {
             if (inputField.text == code) {
-                obj.SetActive(true);
+                lit.intensity = 1;
                 canType = false;
                 text.color = Color.green;
             }

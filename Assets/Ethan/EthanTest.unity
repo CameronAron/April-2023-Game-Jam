@@ -925,7 +925,7 @@ Transform:
   m_GameObject: {fileID: 74691962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.034, y: 0.862, z: -2.956}
-  m_LocalScale: {x: 0.34593, y: 0.34593, z: 0.038021166}
+  m_LocalScale: {x: 0.38263318, y: 0.38263318, z: 0.08385313}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6634,7 +6634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829602750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.071, y: 0.603, z: -1.611}
+  m_LocalPosition: {x: -0.2544, y: 0.603, z: -1.7271}
   m_LocalScale: {x: 0.04710644, y: 0.047851, z: 0.047851}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7074,7 +7074,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 12
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -7138,12 +7138,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1

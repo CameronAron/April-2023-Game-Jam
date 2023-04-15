@@ -24,7 +24,7 @@ public class ArcadeGamePlayer : MonoBehaviour
     {
         if (leftScript.moveLeft)
         {
-            transform.Translate(Vector3.left * Time.deltaTime);
+            transform.Translate(Vector3.right * Time.deltaTime);
             //GetComponent<Rigidbody>().AddForce(0f, 0f, -.1f, ForceMode.Force);
         }
 
@@ -35,7 +35,7 @@ public class ArcadeGamePlayer : MonoBehaviour
 
         if (rightScript.moveRight)
         {
-            transform.Translate(Vector3.right * Time.deltaTime);
+            transform.Translate(Vector3.left * Time.deltaTime);
             //GetComponent<Rigidbody>().AddForce(0f, 0f, .1f, ForceMode.Force);
         }
 

@@ -25,38 +25,36 @@ public class ArcadeGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        counter += Time.deltaTime;
-
-        Debug.Log(counter);
-
-        if (counter > 3f)
-        {
-            random = Random.Range(1, 4);
-            if(random == 1)
-            {
-                Instantiate(FruitPrefab, new Vector3(SpawnOne.position.x, SpawnOne.position.y, SpawnOne.position.z), new Quaternion(0, 45, 0, 0));
-            }
-            else if (random == 2)
-            {
-                Instantiate(FruitPrefab, new Vector3(SpawnTwo.position.x, SpawnTwo.position.y, SpawnTwo.position.z), new Quaternion(0, -45, 0, 0));
-            }
-            else if (random == 3)
-            {
-                Instantiate(FruitPrefab, new Vector3(SpawnThree.position.x, SpawnThree.position.y, SpawnThree.position.z), new Quaternion(0, 180, 0, 0));
-            }
-            else
-            {
-
-            }
-
-            counter = 0;
-        }
-
         if (startScript.GameStarted)
         {
             startScreen.SetActive(false);
 
-            
+            counter += Time.deltaTime;
+
+            Debug.Log(counter);
+
+            if (counter > 3f)
+            {
+                random = Random.Range(1, 4);
+                if (random == 1)
+                {
+                    Instantiate(FruitPrefab, new Vector3(SpawnOne.position.x, SpawnOne.position.y, SpawnOne.position.z), new Quaternion(0, 45, 0, 0));
+                }
+                else if (random == 2)
+                {
+                    Instantiate(FruitPrefab, new Vector3(SpawnTwo.position.x, SpawnTwo.position.y, SpawnTwo.position.z), new Quaternion(0, -45, 0, 0));
+                }
+                else if (random == 3)
+                {
+                    Instantiate(FruitPrefab, new Vector3(SpawnThree.position.x, SpawnThree.position.y, SpawnThree.position.z), new Quaternion(0, 180, 0, 0));
+                }
+                else
+                {
+
+                }
+
+                counter = 0;
+            }
         }
     }
 }

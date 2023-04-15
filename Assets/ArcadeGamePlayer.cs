@@ -24,17 +24,19 @@ public class ArcadeGamePlayer : MonoBehaviour
     {
         if (leftScript.moveLeft)
         {
-            GetComponent<Rigidbody>().AddForce(0f, 0f, -.1f, ForceMode.Force);
+            transform.Translate(Vector3.forward * Time.deltaTime);
+            //GetComponent<Rigidbody>().AddForce(0f, 0f, -.1f, ForceMode.Force);
         }
 
-        if(!leftScript.moveLeft && !rightScript.moveRight)
-        {
-            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        }
+        //if(!leftScript.moveLeft && !rightScript.moveRight)
+        //{
+        //    GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        //}
 
         if (rightScript.moveRight)
         {
-            GetComponent<Rigidbody>().AddForce(0f, 0f, .1f, ForceMode.Force);
+            transform.Translate(Vector3.back * Time.deltaTime);
+            //GetComponent<Rigidbody>().AddForce(0f, 0f, .1f, ForceMode.Force);
         }
 
         if(points >= 3f)

@@ -2474,7 +2474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4352796560614302658}
-  - component: {fileID: 4352796560614302659}
+  - component: {fileID: 8942850586222709462}
   m_Layer: 0
   m_Name: Keypad
   m_TagString: Untagged
@@ -2501,7 +2501,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
---- !u!114 &4352796560614302659
+--- !u!114 &8942850586222709462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2515,7 +2515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 4352796560211200426}
   inputField: {fileID: 4352796560211200428}
-  code: '1 0 2 5 '
+  code: '8 7 6 4 '
   obj: {fileID: 0}
 --- !u!1 &4352796560665927460
 GameObject:

@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 74691966}
   - component: {fileID: 74691965}
   - component: {fileID: 74691964}
-  - component: {fileID: 74691963}
+  - component: {fileID: 74691968}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -853,20 +853,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &74691963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74691962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8551082d6ce078e47990975bb176b7e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 7641369327652796840, guid: 917f7267d3e51944d89f1e16b07c90ad, type: 3}
-  lockedItem: {fileID: 836792038}
 --- !u!65 &74691964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -945,6 +931,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &74691968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74691962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc758fe64201091498154fa3df84f5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockedItem: {fileID: 836792038}
 --- !u!1001 &134707245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7069,7 +7068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 1414032777}
+  m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2

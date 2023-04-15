@@ -8,6 +8,7 @@ TagManager:
   - Right Hand
   - Finger
   - Fruit
+  - Bullet
   layers:
   - Default
   - TransparentFX

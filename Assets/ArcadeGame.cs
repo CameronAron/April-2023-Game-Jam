@@ -32,7 +32,7 @@ public class ArcadeGame : MonoBehaviour
 
             counter += Time.deltaTime;
 
-            Debug.Log(counter);
+            //Debug.Log(counter);
 
             if (counter > 3f)
             {

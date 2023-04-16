@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 
 public class BasketballGame : MonoBehaviour {
-    [SerializeField] GameObject ball;
     [SerializeField] GameObject tickets;
     private int basketsMade;
     private TextMeshPro text;
@@ -16,7 +15,7 @@ public class BasketballGame : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.GetComponent<Collider>() == ball.GetComponent<Collider>()) {
+        if (other.CompareTag("Ball")) {
             basketsMade++;
             text.text = $"{basketsMade}";
             if(basketsMade == 3) {

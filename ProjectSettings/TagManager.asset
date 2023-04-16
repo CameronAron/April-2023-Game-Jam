@@ -9,6 +9,7 @@ TagManager:
   - Finger
   - Fruit
   - Bullet
+  - Ball
   layers:
   - Default
   - TransparentFX

@@ -10,11 +10,16 @@ public class Keypad : MonoBehaviour
     [SerializeField] string code = "8 7 6 4 ";
     [SerializeField] GameObject[] obj, removeObj;
     private bool canType;
+    [SerializeField] bool hasSound;
+    private AudioSource sound;
 
     private void Start() {
         inputField.text = "_ _ _ _";
         text.color = Color.white;
         canType = true;
+        if (hasSound) {
+            sound = this.GetComponent<AudioSource>();
+        }
     }
 
     private void Update() {
@@ -29,6 +34,9 @@ public class Keypad : MonoBehaviour
                 }
                 canType = false;
                 text.color = Color.green;
+                if (hasSound) {
+                    sound.Play();
+                }
             }
             else {
                 inputField.text = "_ _ _ _";

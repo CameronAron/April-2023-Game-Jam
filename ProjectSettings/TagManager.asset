@@ -11,6 +11,7 @@ TagManager:
   - Bullet
   - Ball
   - Hammer
+  - counterDrop
   layers:
   - Default
   - TransparentFX

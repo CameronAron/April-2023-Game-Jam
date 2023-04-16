@@ -18,7 +18,7 @@ public class Keypad : MonoBehaviour
     }
 
     private void Update() {
-        if (inputField.text.Length == 8) {
+        if (inputField.text.Length >= 8) {
             if (inputField.text == code) {
                 inputField.text = code + " ";
                 for(int i = 0; i<obj.Length; i++) {

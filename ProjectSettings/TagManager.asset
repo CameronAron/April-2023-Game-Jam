@@ -10,6 +10,7 @@ TagManager:
   - Fruit
   - Bullet
   - Ball
+  - Hammer
   layers:
   - Default
   - TransparentFX
